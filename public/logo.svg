@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="50%" stop-color="#0EA5E9" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#FF8A4C" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0369A1" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle with shadow -->
+  <rect x="24" y="24" width="464" height="464" rx="108" fill="url(#bgGrad)" filter="url(#shadow)" />
+
+  <!-- Inner subtle glow circle -->
+  <circle cx="256" cy="256" r="190" fill="#FFFFFF" fill-opacity="0.08" />
+
+  <!-- Graduation Cap / Mortarboard -->
+  <g transform="translate(256, 195)">
+    <!-- Cap top diamond -->
+    <path d="M-150,0 L0,-58 L150,0 L0,58 Z" fill="#FFFFFF" />
+    <!-- Cap lower skullcap -->
+    <path d="M-88,26 L-88,72 C-88,108 88,108 88,72 L88,26 C60,44 -60,44 -88,26 Z" fill="#F1F5F9" />
+    <!-- Tassel string and tassel ball -->
+    <path d="M125,5 C135,28 142,65 130,95" fill="none" stroke="url(#orangeGrad)" stroke-width="8" stroke-linecap="round" />
+    <circle cx="128" cy="105" r="14" fill="url(#orangeGrad)" />
+    <!-- Center button -->
+    <circle cx="0" cy="0" r="12" fill="url(#orangeGrad)" />
+  </g>
+
+  <!-- Golden Rank #1 Shield / Medal Badge -->
+  <g transform="translate(256, 335)">
+    <!-- Badge shield -->
+    <path d="M-55,-40 L55,-40 L55,10 C55,48 0,72 0,72 C0,72 -55,48 -55,10 Z" fill="url(#goldGrad)" stroke="#FFFFFF" stroke-width="6" />
+    <!-- Rank Star or #1 -->
+    <path d="M0,-24 L6,-6 L24,-6 L10,6 L15,24 L0,13 L-15,24 L-10,6 L-24,-6 L-6,-6 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- Sparkles -->
+  <!-- Top Right Sparkle -->
+  <g transform="translate(390, 110)">
+    <path d="M0,-28 Q0,0 28,0 Q0,0 0,28 Q0,0 -28,0 Q0,0 0,-28 Z" fill="#FDE047" />
+  </g>
+  <!-- Left Sparkle -->
+  <g transform="translate(110, 130) scale(0.65)">
+    <path d="M0,-28 Q0,0 28,0 Q0,0 0,28 Q0,0 -28,0 Q0,0 0,-28 Z" fill="#FEF08A" />
+  </g>
+  <!-- Bottom Right Mini Sparkle -->
+  <g transform="translate(405, 370) scale(0.55)">
+    <path d="M0,-28 Q0,0 28,0 Q0,0 0,28 Q0,0 -28,0 Q0,0 0,-28 Z" fill="#FFFFFF" />
+  </g>
+</svg>

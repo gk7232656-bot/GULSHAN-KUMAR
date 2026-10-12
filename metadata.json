@@ -1,0 +1,6 @@
+{
+  "name": "EduRank - SSC Railway Bihar Exams",
+  "description": "India's premier exam prep app for SSC CGL, Railway RRB NTPC, Group D, and Bihar State Exams (BPSC/BSSC) with live tests, daily current affairs, bilingual quizzes, and complete study materials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
